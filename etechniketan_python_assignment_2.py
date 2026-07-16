@@ -8,12 +8,12 @@ print(indexes)
 words = ["aba", "xyz", "1991", "aa", "madam", "python", "hi"]
 count = 0
 for w in words:
-    if len(w) >=2 and w == w[::-1]:
+    if len(w) >2 and w == w[::-1]:
         count += 1
 print("Number of palindromes with length > 2:", count)
 
 #task 35
-s1 = "How much wood would a woolchuck chuck if a Woodcutter could chuck wood to build a wooden house to woo for his wife"
+s1 = "How much wood would a woodchuck chuck if a Woodcutter could chuck wood to build a wooden house to woo for his wife"
 words = s1.split()
 result = []
 for w in words:
@@ -71,13 +71,13 @@ while True:
     marks = float(input("Enter your marks (0-100): "))
     if 90 <= marks <= 100:
         grade = "A+"
-    elif 80 <= marks <= 89:
+    elif 80 <= marks <= 90:
         grade = "A"
-    elif 70 <= marks <= 79:
+    elif 70 <= marks <= 80:
         grade = "B"
-    elif 60 <= marks <= 69:
+    elif 60 <= marks <= 70:
         grade = "C"
-    elif 50 <= marks <= 59:
+    elif 50 <= marks <= 60:
         grade = "D"
     elif 0 <= marks < 50:
         grade = "Fail"
